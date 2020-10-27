@@ -16,7 +16,7 @@
                 margin-right: auto;
             }
             #board{
-                background-color: gray;
+                background-color: rgb(214, 28, 183);
                 width: 360px;
                 height: 80px;
                 margin-left: auto;
@@ -47,7 +47,7 @@
                 display: none;
             }
             .pepe{
-                background-image: url('assets/pepe.png');
+                background-image: url('assets/Mickey_Mouse_Disney_3.jpg');
                 background-size: 100% 100%;
                 width:100%;
                 height:100%;
@@ -81,7 +81,6 @@
                 0% {opacity:0;}
                 100% {opacity:1;}
             }
-
             @-ms-keyframes fadeIn {
                 0% {opacity:0;}
                 100% {opacity:1;}
@@ -91,7 +90,7 @@
     <body>
         <div id="main">
             <div id="board">
-                <h2 id="title">Catch Pepe</h2>
+                <h2 id="title">Catch me if you can</h2>
                 <div id="labels">
                     Score:<span id="score">0</span> |Time:<span id="time">30</span>
                 </div>
@@ -128,7 +127,7 @@
                     if(time<=0){
                         clearInterval(play_duration);
                     }
-                },1000);
+                },2000);
                 $('#playground').on('click', '.pepe', function(){
                     console.log('clicked Pepe!');
                     score = score + 1;
@@ -143,7 +142,7 @@
                 $('.box').eq(which_box).append($pepe);
                 setTimeout(function(){
                     $pepe.fadeOut(100);
-                },650);
+                },850);
             }
         </script>
     </body>
